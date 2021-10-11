@@ -1,7 +1,8 @@
 describe('Launch Tandem Web App, makes a call, mutes and unmutes,turns cam on/off, types in chat, leaves call', () => {
     it('Simulates call flow', () => {
-        cy.visit('https://dogfood.tandem.chat/app/web')
-        // gives me time to login 
+        cy.visit('https://staging.tandem.chat/app/web')
+        cy.get('[data-testid=google]').click()
+        // give time to login 
         cy.wait(10000)
         // calls macbook
         cy.contains('Patrick+mac').click()

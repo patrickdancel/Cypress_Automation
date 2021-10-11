@@ -27,7 +27,7 @@ describe('Create room', () => {
         // delete room
         cy.get(':nth-child(11) > .sc-gtssRu > .eWwHwG > .sc-dlnjPT > .sc-hHEjAm').rightclick()
         cy.get('.gxYZqA > .sc-bdnylx').click()
-        cy.wait(1000)
+        cy.wait(2000)
         cy.get('.gLflUe').click()
     })
 })

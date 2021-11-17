@@ -4,10 +4,10 @@ describe('Join room', () => {
         cy.get('[data-testid=google]').click()
         cy.wait(7000)
         // click on room
-        cy.get(':nth-child(7) > .sc-gtssRu > .eWwHwG > .sc-dlnjPT > .sc-hHEjAm').click()
+        cy.contains('Bobalicious').click()
         cy.wait(2000)
         // click join to join room
-        cy.get('.bqAyor').click()
+        cy.get('.kVusTf').click()
         cy.wait(2000)
         // turn on camera
         cy.get('#VideoToggle').click()
@@ -23,7 +23,7 @@ describe('Join room', () => {
         // end call
         cy.get('#EndCall').click()
         // close details panel
-        cy.get('.kIdrfC > :nth-child(2) > .sc-bdnylx').click()
+        cy.get('.bVrDEv > :nth-child(2) > .src__Root-xohg5z-0 > .Icon__StyledMaterialIcon-idxmxm-1').click()
        
     })
   })

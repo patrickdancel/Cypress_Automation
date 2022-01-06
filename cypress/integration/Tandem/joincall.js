@@ -5,8 +5,8 @@ describe('Launch Tandem Web App, makes a call, mutes and unmutes,turns cam on/of
         // give time to login 
         cy.wait(10000)
         // calls macbook
-        cy.contains('Patrick+mac').click()
-        cy.get('.dvjQFC').click()
+        cy.contains('Patrick Mac').click()
+        cy.get('.kVusTf').click()
         // unmute/mute
         cy.get('#MuteToggle').click()
         cy.wait(5000)
@@ -17,18 +17,11 @@ describe('Launch Tandem Web App, makes a call, mutes and unmutes,turns cam on/of
         // turn off camera
         cy.get('#VideoToggle').click()
         // click chat button
-        cy.get('#CallChat').click()
-        cy.get('.jBGJhK > .sc-cGKHXZ').click().type('testing how are you today?{enter}')
-        cy.get('.haaQWJ > .sc-csTaMs > .sc-bdnylx > .sc-hiKfjK').click()
+        cy.get('#CallChat').click({force: true})
+        cy.get('.cfVamX').click().type('testing how are you today?{enter}')
 
-        // click on screenshare
-        cy.get('#ScreenShareToggle').click()
 
         cy.wait(3000)
-        // click on settings
-        // cy.get('#More').click()
-        
-        // leave conversation
-        cy.get('.sc-cBoprd').click()  
+        cy.get('#EndCall').click()  
     })
   })

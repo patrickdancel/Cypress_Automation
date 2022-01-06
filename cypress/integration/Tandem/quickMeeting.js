@@ -9,10 +9,10 @@ describe('Create quick meeting', () => {
         cy.wait(3000)
 
         // rename meeting name
-        cy.get('.Stack__Wrapper-sc-118ccxv-0 > .src__Column-xohg5z-1 > .Input__StyledInputBox-sc-1neqxsk-0 > .src__Root-xohg5z-0').click().type('Meeting Test')
+        cy.get('.Stack__Wrapper-sc-118ccxv-0 > .src__Column-xohg5z-1 > .Input__StyledInputBox-sc-1neqxsk-1 > .src__Root-xohg5z-0 > .Input__StyledInputField-sc-1neqxsk-2').click().type('Meeting Test')
 
         // click start meeting
-        cy.get('.kHPNQv').click()
+        cy.get('.dclKei').click()
         cy.wait(10000)
 
         // click on leave 
